@@ -1,8 +1,16 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Logo from './Symbol-Ventixe.svg'
 
 const Nav = () => {
   return (
-    <nav>Nav</nav>
+    <nav>
+        <div className="logo-section">
+        <img src={Logo} alt="Symbol Ventixe" className="logo" />
+        <h2 className="brand">Ventixe</h2>
+        </div>
+        <NavLink to="/">Events</NavLink>
+    </nav>
   )
 }
 
